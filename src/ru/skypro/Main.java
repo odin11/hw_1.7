@@ -22,12 +22,7 @@ public class Main {
     //task4
         //"Может потребоваться метод split() и метод contains()."
         String fullname4 = "Иванов Семён Семёнович";
-        if (fullname4.contains("ё")) {
-            String fullnameE = fullname4.replace("ё","е");
-            System.out.println("Данные ФИО сотрудника — " + fullnameE + ".");
-        }else{
-            System.out.println("Данные ФИО сотрудника — " + fullname4 + ".");
-        }
-
+        String fullnameE = fullname4.replaceAll("ё","е");
+        System.out.println(fullnameE);
     }
 }
